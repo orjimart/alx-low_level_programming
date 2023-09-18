@@ -1,27 +1,33 @@
-nclude "main.h"
+#include <stdio.h>
+#include <string.h>
+#include "main.h"
 /**
- * puts_half - prints the remianing of a string
+ * puts_half - a function that prints half of a string
+ * @str: input
  *
- * @str: the string input
- *
- * Return: void
+ * Return: half of input
  */
 void puts_half(char *str)
 {
-	int len = 0;
-	int half, i;
+	int i, n, len = 0;
+	int x, y, i;
 
-	while (str[len] != '\0')
-	{
+	for (i = 0; str[i] != '\0'; i++)
 		len++;
-	}
+	x = strlen(str);
+	if (x % 2 == 1)
+		y = x / 2 + 1;
+	else
+		y = x / 2;
 
-	half = (len - 1) / 2;
+	n = (len / 2);
 
-	for (i = (half + 1); i < len; i++)
-	{
+	if ((len % 2) == 1)
+		n = ((len - 1) / 2);
+
+	for (i = n; str[i] != '\0'; i++)
+	for (i = y; i < x; i++)
 		_putchar(str[i]);
-	}
-
 	_putchar('\n');
+	_putchar("\n");
 }
