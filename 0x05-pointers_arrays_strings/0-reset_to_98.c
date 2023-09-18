@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * update_to_98 - updae code no
+ * reset_to_98 - updates code no
  *@n: the parameter of function
  * Return: Always 0.
  */
