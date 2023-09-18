@@ -6,18 +6,18 @@
 void rev_string(char *s)
 {
 	int i = 0;
-	int j = 0;
+	int cpt = 0;
 
 	for (i = 0; (s[i] != '\0' && s[i + 1]); i++)
 	{
-		j++;
+		cpt++;
 	}
 
 	i = 0;
-	if (j > 0)
+	if (cpt > 0)
 
 	{
-		for (i = j; i >= 0; i--)
+		for (i = cpt; i >= 0; i--)
 		{
 			printf("%c", s[i]);
 		}
