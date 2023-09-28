@@ -6,7 +6,7 @@
  * @y: iterator
  * Return: square root or -1
  */
-int sqrt_a(int x, inty)
+int sqrt_a(int x, int y)
 {
 	if (y * y == x)
 	{
